@@ -59,7 +59,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./style/viriables.scss";
+@import "../style/viriables.scss";
 .docker {
   display: flex;
   box-sizing: border-box;
