@@ -107,7 +107,7 @@ export default {
     top: 0.01rem;
     font-size: 0.2rem;
   }
-  .positio__notice {
+  .position__notice {
     position: absolute;
     right: 0;
     top: 0.17rem;

@@ -1,5 +1,5 @@
 <template>
-  <div class="warpper">
+  <div class="wrapper">
     <img
       src="https://cdn.jsdelivr.net/gh/poicc/image@main/1872c290-c537-11ec-b721-37898cb18678.3uuceh24uky0.webp"
       class="wrapper__img"

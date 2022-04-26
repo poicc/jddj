@@ -3,7 +3,7 @@
   <router-link to="login">
     <h2>登录</h2>
   </router-link>
-  <AppDocker :currentIndex="2" />
+  <AppDocker :currentIndex="3" />
 </template>
 
 <script>

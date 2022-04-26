@@ -9,7 +9,7 @@ const routes = [
   },
   {
     path: '/cart',
-    name: 'CardPage',
+    name: 'CartPage',
     component: () => import('../views/cart/CartPage')
   },
   {

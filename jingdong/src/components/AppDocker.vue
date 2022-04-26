@@ -76,7 +76,7 @@ export default {
     text-align: center;
 
     a {
-        color: $content-bgColor;
+        color: $content-fontcolor;
         text-decoration: none;
     }
 
