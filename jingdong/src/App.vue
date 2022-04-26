@@ -190,8 +190,8 @@
   &__search {
     margin-bottom: 0.12rem;
     line-height: 0.32rem;
-    background-color: $background-color;
-    color: $placeholder-color;
+    background-color: #fff;
+    color: #fff;
     border-radius: 0.16rem;
     .iconfont {
       display: inline-block;
@@ -257,7 +257,7 @@
   &__content {
     flex: 1;
     padding-bottom: 0.12rem;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid #fff;
     &__title {
       line-height: 0.22rem;
       font-size: 0.16rem;
@@ -281,31 +281,5 @@
   }
 }
 
-.docker {
-  display: flex;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 0.49rem;
-  border-top: 0.01rem solid #f1f1f1;
-  color: $content-fontcolor;
-  &__item {
-    flex: 1;
-    text-align: center;
 
-    &--active {
-      color: $highlight-color;
-    }
-    .iconfont {
-      margin: 0.07rem 0 0.02rem 0;
-      font-size: 0.18rem;
-    }
-  }
-  &__title {
-    font-size: 0.2rem;
-    transform: scale(0.5, 0.5);
-    transform-origin: center top;
-  }
-}
 </style>
