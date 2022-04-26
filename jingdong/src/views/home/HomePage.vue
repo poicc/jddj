@@ -1,6 +1,7 @@
 <template>
   <div class="warpper">
     <StaticPart />
+    <NearByShop />
   </div>
   <AppDocker :currentIndex="0" />
 </template>
@@ -8,12 +9,13 @@
 <script>
 import StaticPart from "./StaticPart";
 import AppDocker from "../../components/AppDocker";
-
+import NearByShop from "./NearByShop"
 export default {
   name: "HomePage",
   components: {
     StaticPart,
     AppDocker,
+    NearByShop
   },
 };
 </script>

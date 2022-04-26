@@ -32,6 +32,11 @@ const routes = [
     name: 'LoginPage',
     component: () => import('../views/login/LoginPage')
   },
+  {
+    path: '/shop/:id',
+    name: 'ShopPage',
+    component: () => import('../views/shop/ShopPage')
+  }
 ]
 
 const router = createRouter({
