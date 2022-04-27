@@ -8,34 +8,36 @@
       </div>
     </div>
     <ShopInfo :item="item" :hideBorder="true" v-show="item.imgUrl" />
+    <ShopContent :shopName="item.name" />
   </div>
 </template>
 
 <script setup>
-import { reactive, toRefs } from "vue";
-import { useRouter, useRoute } from "vue-router";
-import { get } from "../../utils/request";
-import ShopInfo from "../../components/ShopInfo";
-const route = useRoute();
-const data = reactive({ item: {} });
+import { reactive, toRefs } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
+import { get } from '../../utils/request'
+import ShopInfo from '../../components/ShopInfo'
+import ShopContent from './ShopContent'
+const route = useRoute()
+const data = reactive({ item: {} })
 
 get(`/shop/${route.params.id}`).then((res) => {
   if (res?.code === 200 && res?.data) {
-    console.log(res.data);
-    data.item = res.data;
+    console.log(res.data)
+    data.item = res.data
   }
-});
-const { item } = toRefs(data);
+})
+const { item } = toRefs(data)
 
-const router = useRouter();
+const router = useRouter()
 const handleBackClick = () => {
-  console.log("back");
-  router.back();
-};
+  console.log('back')
+  router.back()
+}
 </script>
 
 <style lang="scss" scoped>
-@import "../../style/index.scss";
+@import '../../style/index.scss';
 .wrapper {
   padding: 0 0.18rem;
 }
@@ -53,24 +55,24 @@ const handleBackClick = () => {
     flex: 1;
     background: $search-bgColor;
     border-radius: 0.16rem;
-  }
-  &__icon {
-    width: 0.44rem;
-    text-align: center;
-    color: $search-fontColor;
-  }
-  &__input {
-    display: block;
-    width: 100%;
-    padding-right: 0.2rem;
-    border: none;
-    outline: none;
-    background: none;
-    height: 0.32rem;
-    font-size: 0.14rem;
-    color: $content-fontcolor;
-    &::placeholder {
+    &__icon {
+      width: 0.44rem;
+      text-align: center;
+      color: $search-fontColor;
+    }
+    &__input {
+      display: block;
+      width: 100%;
+      padding-right: 0.2rem;
+      border: none;
+      outline: none;
+      background: none;
+      height: 0.32rem;
+      font-size: 0.14rem;
       color: $content-fontcolor;
+      &::placeholder {
+        color: $content-fontcolor;
+      }
     }
   }
 }

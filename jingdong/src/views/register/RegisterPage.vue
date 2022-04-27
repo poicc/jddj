@@ -62,6 +62,7 @@ const handleRegister = async () => {
       password: data.password,
     });
     if (result?.code === 200 && result.message === "注册成功") {
+      console.log('注册成功')
       router.push({ name: "LoginPage" });
     } else {
       console.log(res.message);

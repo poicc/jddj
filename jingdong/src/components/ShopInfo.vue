@@ -4,13 +4,13 @@
     <div
       :class="{
         shop__content: true,
-        'shop__content--bordered': hideBorder ? false : true,
+        'shop__content--bordered': hideBorder ? false : true
       }"
     >
       <div class="shop__content__title">{{ item.name }}</div>
       <div class="shop__content__tags">
         <span class="shop__content__tag">月售: {{ item.sales }}</span>
-        <span class="shop__content__tag">起送: {{ item.expressLimiy }}</span>
+        <span class="shop__content__tag">起送: {{ item.expressLimit }}</span>
         <span class="shop__content__tag"
           >基础运费: {{ item.expressPrice }}</span
         >
@@ -24,13 +24,13 @@
 
 <script>
 export default {
-  name: "ShopInfo",
-  props: ["item", "hideBorder"],
-};
+  name: 'ShopInfo',
+  props: ['item', 'hideBorder']
+}
 </script>
 
 <style lang="scss" scoped>
-@import "../style/index.scss";
+@import '../style/index.scss';
 .shop {
   display: flex;
   padding-top: 0.12rem;
@@ -43,7 +43,7 @@ export default {
     flex: 1;
     padding-bottom: 0.12rem;
     &__border {
-        border-bottom: 1px solid $content-bgColor;
+      border-bottom: 1px solid $content-bgColor;
     }
     &__title {
       line-height: 0.22rem;
@@ -57,7 +57,7 @@ export default {
       color: $content-fontcolor;
     }
     &__tag {
-      margin-right: 00.16rem;
+      margin-right: 0.16rem;
     }
     &__highlight {
       margin: 0.08rem 0 0 0;
