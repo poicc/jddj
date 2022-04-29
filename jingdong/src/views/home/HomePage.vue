@@ -7,17 +7,17 @@
 </template>
 
 <script>
-import StaticPart from "./StaticPart";
-import AppDocker from "../../components/AppDocker";
-import NearByShop from "./NearByShop"
+import StaticPart from './StaticPart'
+import AppDocker from '../../components/AppDocker'
+import NearByShop from './NearByShop'
 export default {
-  name: "HomePage",
+  name: 'HomePage',
   components: {
     StaticPart,
     AppDocker,
     NearByShop
-  },
-};
+  }
+}
 </script>
 
 <style lang="scss" scoped>

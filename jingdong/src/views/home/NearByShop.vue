@@ -13,22 +13,22 @@
 </template>
 
 <script setup>
-import { toRefs, reactive } from "vue";
-import { get } from "../../utils/request";
-import ShopInfo from "../../components/ShopInfo";
-const data = reactive({ nearByList: [] });
-get("/shop/list").then((result) => {
+import { toRefs, reactive } from 'vue'
+import { get } from '../../utils/request'
+import ShopInfo from '../../components/ShopInfo'
+const data = reactive({ nearByList: [] })
+get('/shop/list').then((result) => {
   if (result?.code === 200 && result?.data) {
-    console.log(result.data);
-    data.nearByList = result.data;
+    console.log(result.data)
+    data.nearByList = result.data
   }
-});
+})
 
-const { nearByList } = toRefs(data);
+const { nearByList } = toRefs(data)
 </script>
 
 <style lang="scss" scoped>
-@import "../../style/index.scss";
+@import '../../style/index.scss';
 .nearby {
   &__title {
     margin: 0.16rem 0 0.02rem 0;

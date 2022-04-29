@@ -28,74 +28,72 @@
     </div>
   </div>
   <div class="gap"></div>
-
-  
 </template>
 <script>
 export default {
-  name: "StaticPart",
+  name: 'StaticPart',
   setup() {
     const iconsList = [
       {
-        imgNmae: "超市",
-        desc: "超市便利",
-        icon: "https://cdn.jsdelivr.net/gh/poicc/image@main/超市.381xxdf9k0s0.webp",
+        imgNmae: '超市',
+        desc: '超市便利',
+        icon: 'https://cdn.jsdelivr.net/gh/poicc/image@main/超市.381xxdf9k0s0.webp'
       },
       {
-        imgNmae: "菜市场",
-        desc: "菜市场",
-        icon: "https://cdn.jsdelivr.net/gh/poicc/image@main/菜市场.xmmq0ne672o.webp",
+        imgNmae: '菜市场',
+        desc: '菜市场',
+        icon: 'https://cdn.jsdelivr.net/gh/poicc/image@main/菜市场.xmmq0ne672o.webp'
       },
       {
-        imgNmae: "水果店",
-        desc: "水果店",
-        icon: "https://cdn.jsdelivr.net/gh/poicc/image@main/水果店.5rpv53yr71w0.webp",
+        imgNmae: '水果店',
+        desc: '水果店',
+        icon: 'https://cdn.jsdelivr.net/gh/poicc/image@main/水果店.5rpv53yr71w0.webp'
       },
       {
-        imgNmae: "鲜花",
-        desc: "鲜花",
-        icon: "https://cdn.jsdelivr.net/gh/poicc/image@main/鲜花.1l9r58g3j5eo.webp",
+        imgNmae: '鲜花',
+        desc: '鲜花',
+        icon: 'https://cdn.jsdelivr.net/gh/poicc/image@main/鲜花.1l9r58g3j5eo.webp'
       },
       {
-        imgNmae: "医药健康",
-        desc: "医药健康",
-        icon: "https://cdn.jsdelivr.net/gh/poicc/image@main/医药健康.15z8pd10yedc.webp",
+        imgNmae: '医药健康',
+        desc: '医药健康',
+        icon: 'https://cdn.jsdelivr.net/gh/poicc/image@main/医药健康.15z8pd10yedc.webp'
       },
       {
-        imgNmae: "家居",
-        desc: "家居时尚",
-        icon: "https://cdn.jsdelivr.net/gh/poicc/image@main/家居.7jp1bei9yo00.webp",
+        imgNmae: '家居',
+        desc: '家居时尚',
+        icon: 'https://cdn.jsdelivr.net/gh/poicc/image@main/家居.7jp1bei9yo00.webp'
       },
       {
-        imgNmae: "蛋糕",
-        desc: "烘焙蛋糕",
-        icon: "https://cdn.jsdelivr.net/gh/poicc/image@main/蛋糕.233n2l0flls0.webp",
+        imgNmae: '蛋糕',
+        desc: '烘焙蛋糕',
+        icon: 'https://cdn.jsdelivr.net/gh/poicc/image@main/蛋糕.233n2l0flls0.webp'
       },
       {
-        imgNmae: "签到",
-        desc: "签到",
-        icon: "https://cdn.jsdelivr.net/gh/poicc/image@main/签到.2en5q1dnw7wg.webp",
+        imgNmae: '签到',
+        desc: '签到',
+        icon: 'https://cdn.jsdelivr.net/gh/poicc/image@main/签到.2en5q1dnw7wg.webp'
       },
       {
-        imgNmae: "大牌免运",
-        desc: "大牌免运",
-        icon: "https://cdn.jsdelivr.net/gh/poicc/image@main/大牌免运.77xfzzc9fv40.webp",
+        imgNmae: '大牌免运',
+        desc: '大牌免运',
+        icon: 'https://cdn.jsdelivr.net/gh/poicc/image@main/大牌免运.77xfzzc9fv40.webp'
       },
       {
-        imgNmae: "红包",
-        desc: "红包套餐",
-        icon: "https://cdn.jsdelivr.net/gh/poicc/image@main/红包.66unzn28xa80.webp",
-      },
-    ];
+        imgNmae: '红包',
+        desc: '红包套餐',
+        icon: 'https://cdn.jsdelivr.net/gh/poicc/image@main/红包.66unzn28xa80.webp'
+      }
+    ]
     return {
-      iconsList,
-    };
-  },
-};
+      iconsList
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
-@import "../../style/index.scss";
+@import '../../style/index.scss';
 .position {
   position: relative;
   padding: 0.16rem 0.16rem 0.16rem 0;
@@ -166,6 +164,4 @@ export default {
   height: 0.1rem;
   background: $content-bgColor;
 }
-
-
 </style>
