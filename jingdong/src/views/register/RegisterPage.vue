@@ -37,54 +37,54 @@
 </template>
 
 <script setup>
-import { reactive, toRefs } from "vue";
-import { useRouter } from "vue-router";
-import { post } from "../../utils/request";
+import { reactive, toRefs } from 'vue'
+import { useRouter } from 'vue-router'
+import { post } from '../../utils/request'
 
 const data = reactive({
-  username: "crq",
-  password: "",
-  ensurement: "",
-});
+  username: 'crq',
+  password: '',
+  ensurement: ''
+})
 
-const router = useRouter();
+const router = useRouter()
 
 const handleRegister = async () => {
   if (data.password !== data.ensurement) {
-    console.log("两次密码不一致");
-    data.password = "";
-    data.ensurement = "";
-    return;
+    console.log('两次密码不一致')
+    data.password = ''
+    data.ensurement = ''
+    return
   }
   try {
-    const result = await post("/user/register", {
+    const result = await post('/user/register', {
       username: data.username,
-      password: data.password,
-    });
-    if (result?.code === 200 && result.message === "注册成功") {
+      password: data.password
+    })
+    if (result?.code === 200 && result.message === '注册成功') {
       console.log('注册成功')
-      router.push({ name: "LoginPage" });
+      router.push({ name: 'LoginPage' })
     } else {
-      console.log(res.message);
-      data.username = "";
-      data.password = "";
-      data.ensurement = "";
+      console.log(res.message)
+      data.username = ''
+      data.password = ''
+      data.ensurement = ''
     }
   } catch (e) {
-    console.log("请求失败");
+    console.log('请求失败')
   }
-};
-const { username, password, ensurement } = toRefs(data);
+}
+const { username, password, ensurement } = toRefs(data)
 
 const handleLoginClick = () => {
   router.push({
-    name: "LoginPage",
-  });
-};
+    name: 'LoginPage'
+  })
+}
 </script>
 
 <style lang="scss" scoped>
-@import "../../style/index.scss";
+@import '../../style/index.scss';
 .wrapper {
   position: absolute;
   top: 50%;
